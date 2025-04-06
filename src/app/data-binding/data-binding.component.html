@@ -13,11 +13,18 @@
             <input type="number" [placeholder]="age">
             
             <li>Event Binding</li>
-            <button class="btn btn-primary" (dblclick)="showAlert()">Click</button>
+            <button class="btn btn-primary" (dblclick)="showAlert()">Cli
+                
+                ck</button>
+
+            <li>Style Binding</li>
+            <p [style.color]="color">Property Binding</p>
+            <h1 [style.border]="border">Hello</h1>
 
 
         </ol>
         <li>Two way data Binding</li>
+        <input type="text" [(ngModel)]="firstname">
     </ul>
 
 </div>

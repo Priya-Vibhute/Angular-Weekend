@@ -4,10 +4,12 @@ import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { AdditionComponent } from './addition/addition.component';
+import { PipeExamplesComponent } from './pipe-examples/pipe-examples.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,AboutComponent,ProductComponent,CategoryComponent,DataBindingComponent],
+  imports: [RouterOutlet,AboutComponent,ProductComponent,CategoryComponent,DataBindingComponent,AdditionComponent,PipeExamplesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
