@@ -6,10 +6,11 @@ import { CategoryComponent } from './category/category.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { AdditionComponent } from './addition/addition.component';
 import { PipeExamplesComponent } from './pipe-examples/pipe-examples.component';
+import { DirectivesExampleComponent } from './directives-example/directives-example.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,AboutComponent,ProductComponent,CategoryComponent,DataBindingComponent,AdditionComponent,PipeExamplesComponent],
+  imports: [RouterOutlet,AboutComponent,ProductComponent,CategoryComponent,DataBindingComponent,AdditionComponent,PipeExamplesComponent,DirectivesExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
