@@ -1,6 +1,20 @@
 <p>directives-example works!</p>
 <!-- *ngIf -->
 
+<hr>
+
+<div *ngIf="status; then ifblock else elseblock"></div>
+   <ng-template #ifblock>
+         <p>Status value is true</p>
+   </ng-template>
+
+   <ng-template #elseblock>
+        <p>Status value is false</p>
+   </ng-template>
+        
+
+<hr>
+
 <p class="text-white bg-danger" *ngIf="loggedIn ; else block ">Logged In</p>
 
 <ng-template #block>
