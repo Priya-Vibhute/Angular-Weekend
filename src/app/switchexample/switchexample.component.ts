@@ -1,5 +1,5 @@
 import { NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-switchexample',
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class SwitchexampleComponent {
 
-  requestStatus:string="approved"
+  @Input()  requestStatus:string="approved"
 
   // changeStatus("rejected")
   changeStatus(newStatus:string)

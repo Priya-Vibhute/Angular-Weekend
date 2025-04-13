@@ -9,10 +9,11 @@ import { PipeExamplesComponent } from './pipe-examples/pipe-examples.component';
 import { DirectivesExampleComponent } from './directives-example/directives-example.component';
 import { SwitchexampleComponent } from './switchexample/switchexample.component';
 import { ParentComponent } from './parent/parent.component';
+import { AttributedirectivesComponent } from './attributedirectives/attributedirectives.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,AboutComponent,ProductComponent,CategoryComponent,DataBindingComponent,AdditionComponent,PipeExamplesComponent,DirectivesExampleComponent,SwitchexampleComponent,ParentComponent],
+  imports: [RouterOutlet,AboutComponent,ProductComponent,CategoryComponent,DataBindingComponent,AdditionComponent,PipeExamplesComponent,DirectivesExampleComponent,SwitchexampleComponent,ParentComponent,AttributedirectivesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

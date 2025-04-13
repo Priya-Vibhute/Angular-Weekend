@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ChildComponent } from '../child/child.component';
-
+import { Student } from '../child/child.component';
 @Component({
   selector: 'app-parent',
   imports: [ChildComponent],
@@ -9,4 +9,17 @@ import { ChildComponent } from '../child/child.component';
 })
 export class ParentComponent {
    parentData:string="XYZ"
+
+   receiveMessage(data:string)
+   {
+      alert(data)
+   }
+
+
+   receiveStudentDetails(data:Student)
+   {
+      alert(data.id+" "+data.name);
+   }
+
+   
 }
