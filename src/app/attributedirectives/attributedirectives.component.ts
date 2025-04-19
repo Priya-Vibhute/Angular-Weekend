@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AttributedirectivesComponent {
 
+  darktheme:boolean=true;
+
   classes:any={
     bg:"bg-warning",
     tc:"text-danger",
