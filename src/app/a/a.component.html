@@ -1,0 +1,15 @@
+<div class="container border border-primary p-3">
+
+    <h3>Count {{count}}</h3>
+    <button class="btn btn-primary mx-2"  (click)="increment()">Increment</button>
+
+
+
+    <hr>
+
+    <app-b [data]="dataFromParent" *ngIf="count<5"></app-b>
+    <button class="btn btn-primary mx-2"  (click)="changeData('Btn1')">BTN1</button>
+    <button class="btn btn-primary mx-2" (click)="changeData('Btn2')">BTN2</button>
+    <button class="btn btn-primary mx-2" (click)="changeData('Btn3')">BTN3</button>
+
+</div>
